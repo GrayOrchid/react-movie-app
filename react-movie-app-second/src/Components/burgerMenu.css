@@ -1,0 +1,98 @@
+.burgerMenu{
+    margin: 0;
+    width: 100%;
+    height: 100vh; 
+    position: fixed;
+
+    backdrop-filter: blur(10px);    
+  
+
+    z-index: 100111;
+    visibility: hidden;
+transform: translateX(-100%); 
+    transition: .5s;
+
+
+}
+.inputs{
+   display: flex;
+   flex-flow: column;
+  
+}
+input{
+    width: 300px;
+    height: 30px;
+    margin: .5rem;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: .2rem;
+    font-size: 15px;
+}
+
+.burgerAcitve{
+    visibility: visible;
+    transform: translateX(0%);
+}
+.burgerCont{
+   display: flex;
+   flex-flow: column;
+ background-color: rgba(247, 247, 247, 0.2);
+ border-radius: 10px;
+ 
+    color: white;
+    height: 100vh;   
+     width: 350px;
+ padding: .5rem;
+}
+h3{
+    font-size: 30px;
+    padding: .5rem;
+    transition: .2s;
+    cursor: pointer;
+}
+h3:hover{
+    color: rgb(245, 13, 226);  
+    transform: scale(1.01);
+}
+
+
+h1{
+    /* color: black; */
+}
+
+input:active{
+	outline: none;
+}
+
+.faBars{
+    color: white;
+    margin: .1rem;
+  font-size: 40px;
+  transition: .5s;
+
+}
+.faBarsClose{
+  
+    margin: .1rem;
+  font-size: 40px;
+  transition: .5s;
+}
+.faBars:hover{
+    color: violet;
+    text-shadow: 0 0 20px red;
+}
+input:active{
+	outline: none;
+    box-shadow: 0 0 20px purple;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 0  20px purple;
+}
+@media (max-width: 600px) {
+    .burgerCont{
+        width: 100%;
+    
+    }
+}
