@@ -10,7 +10,7 @@ return(
    
 <div className="back" ><h1 onClick={()=>setShow(false)}> <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon> Назад</h1></div>
 <div className="itemsList">
-<h1>Избранное</h1>
+<h1 >Избранное</h1>
 
 </div>
 <div className="list">

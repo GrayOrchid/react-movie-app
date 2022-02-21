@@ -4,10 +4,10 @@ import {
 } from "react";
 import Movie from "./Components/Movie";
 import WatchListMap from "./Components/WatchListMap";
-import Modal from "./Components/Modal/Modal"
+import Modal from "./Components/UI/Modal/Modal"
 import './App.css'
 import successfulMovies from "./Components/MovieArray/SuccessfulMovies";
-import BurgerMenu from "./Components/BurgerMenu";
+import BurgerMenu from "./Components/UI/BurgerMenu/BurgerMenu";
 
 function App(params) {
   let [movies, setMovies] = useState([])
