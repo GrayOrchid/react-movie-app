@@ -9,13 +9,16 @@ import './App.css'
 import successfulMovies from "./Components/MovieArray/SuccessfulMovies";
 import BurgerMenu from "./Components/UI/BurgerMenu/BurgerMenu";
 
+
+
+
 function App(params) {
   let [movies, setMovies] = useState([])
   let [search, setSearch] = useState('')
   let [searchCollections, setSearchCollections] = useState('')
   let [watchList, setWatchList] = useState([])
   let [show, setShow] = useState(false)
- 
+  let [burgerMenu,setBurgerMenu] = useState(false)
   let key = '82c0eaa6b4a3e3b9581bcd29c4e1872f'
 function getsuccessfulMovies(params) {
     setMovies(successfulMovies)
@@ -80,11 +83,15 @@ function getsuccessfulMovies(params) {
       }
   }, []);
 
-  
+
 
   return(
-    <div className="App">
-        <BurgerMenu setSearch={setSearch} getPopuparMovies={getPopuparMovies} getPopuparSeries={getPopuparSeries} setShow={setShow} setSearchCollections={setSearchCollections} getsuccessfulMovies={getsuccessfulMovies}/>
+    <div className={burgerMenu?'App block':'App'}>
+ 
+        <BurgerMenu burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} setSearch={setSearch} getPopuparMovies={getPopuparMovies} getPopuparSeries={getPopuparSeries} setShow={setShow} setSearchCollections={setSearchCollections} getsuccessfulMovies={getsuccessfulMovies}/>
+    <div className="ReactMovieApp">
+    <h1>React Movie App</h1>
+    </div>
     <Modal active={show} >
     <WatchListMap watchList={watchList} deleteMovie={deleteMovie}setShow={setShow} />
     </Modal >   

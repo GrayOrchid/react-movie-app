@@ -12,3 +12,15 @@ body{
 .App::-webkit-scrollbar {
   display: none;
 }
+.App{
+  height: 100vh;
+}
+.block{
+  overflow: hidden;
+}
+.ReactMovieApp{
+  width: 100%;
+  display: flex;
+  justify-content: center   ;
+  color: white;
+}

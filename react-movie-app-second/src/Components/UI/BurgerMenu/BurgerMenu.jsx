@@ -3,18 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import './burgerMenu.css'
 
-function BurgerMenu({setSearch,getPopuparMovies,getPopuparSeries,setShow,setSearchCollections,getsuccessfulMovies}) {
-    let [active,setActive] = useState(false)
+function BurgerMenu({ setBurgerMenu,     burgerMenu ,   setSearch,getPopuparMovies,getPopuparSeries,setShow,setSearchCollections,getsuccessfulMovies}) {
+  
     
    
     return(
      
 <div>
 
-<div className={active ? 'burgerMenu burgerAcitve': 'burgerMenu'} onClick={()=>setActive(false)} >
+<div className={burgerMenu ? 'burgerMenu burgerAcitve': 'burgerMenu'} onClick={()=>setBurgerMenu(false)} >
 
     <div className="burgerCont" onClick={(e)=>e.stopPropagation()}>
-<FontAwesomeIcon icon={faBars} onClick={()=>setActive(false)} className='faBarsClose'></FontAwesomeIcon>
+<FontAwesomeIcon icon={faBars} onClick={()=>setBurgerMenu(false)} className='faBarsClose'></FontAwesomeIcon>
    
    <div className="items">
    <h2>React Movie App</h2>
@@ -33,7 +33,7 @@ function BurgerMenu({setSearch,getPopuparMovies,getPopuparSeries,setShow,setSear
    </div>
     </div>
 </div>
-<FontAwesomeIcon icon={faBars} onClick={()=>setActive(true)} className='faBars'></FontAwesomeIcon>
+<FontAwesomeIcon icon={faBars} onClick={()=>setBurgerMenu (true)  } className='faBars'></FontAwesomeIcon>
 
 </div>
     

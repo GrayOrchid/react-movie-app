@@ -33,6 +33,7 @@ input{
 .burgerAcitve{
     visibility: visible;
     transform: translateX(0%);
+    overflow: hidden;
 }
 .burgerCont{
    display: flex;
