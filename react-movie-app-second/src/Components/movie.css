@@ -88,15 +88,11 @@ img {
 	margin-top: 10px;
 }
 
-.ModalMovie {
-	display: flex;
-	flex-flow: column;
-}
 
 
 /* Добавление/Удаление фаворитов */
 
-.addToWatachList {
+.add-to-watach-list {
 	color: white;
 	font-size: 30px;
 	transition: .5s;
@@ -106,7 +102,7 @@ img {
 	background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
 }
 
-.removeToWatachList {
+.remove-to-watach-list {
 	color: white;
 	font-size: 30px;
 	transition: .5s;
@@ -116,11 +112,11 @@ img {
 	background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
 }
 
-.removeToWatachList:hover {
+.remove-to-watach-list:hover {
 	color: red;
 }
 
-.addToWatachList:hover {
+.add-to-watach-list:hover {
 	color: gold;
 	color: linear-gradient(to left, #8e2de2, #4a00e0);
 }
@@ -160,7 +156,7 @@ img {
 	color: violet;
 }
 
-.itemsList h1 {
+.items-list h1 {
 	color: white;
 }
 

@@ -20,7 +20,7 @@ return(
          <p>{props.movie.overview}</p>
          <h4>Релиз: {props.movie.release_date} {props.movie.first_air_date}</h4>
   
-             <button onClick={()=>props.deleteMovie(props.movie)}className='removeToWatachList'>    <FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon></button>
+             <button onClick={()=>props.deleteMovie(props.movie)}className='remove-to-watach-list'>    <FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon></button>
       </div>
    </div>
 </div>

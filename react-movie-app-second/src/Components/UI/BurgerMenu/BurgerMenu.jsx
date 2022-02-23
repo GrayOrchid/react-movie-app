@@ -11,10 +11,10 @@ function BurgerMenu({ setBurgerMenu,     burgerMenu ,   setSearch,getPopuparMovi
      
 <div>
 
-<div className={burgerMenu ? 'burgerMenu burgerAcitve': 'burgerMenu'} onClick={()=>setBurgerMenu(false)} >
+<div className={burgerMenu ? 'burger-menu burger-acitve': 'burger-menu'} onClick={()=>setBurgerMenu(false)} >
 
-    <div className="burgerCont" onClick={(e)=>e.stopPropagation()}>
-<FontAwesomeIcon icon={faBars} onClick={()=>setBurgerMenu(false)} className='faBarsClose'></FontAwesomeIcon>
+    <div className="burger-cont" onClick={(e)=>e.stopPropagation()}>
+<FontAwesomeIcon icon={faBars} onClick={()=>setBurgerMenu(false)} className='faBars-close'></FontAwesomeIcon>
    
    <div className="items">
    <h2>React Movie App</h2>

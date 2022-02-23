@@ -89,7 +89,7 @@ function getsuccessfulMovies(params) {
     <div className={burgerMenu?'App block':'App'}>
  
         <BurgerMenu burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} setSearch={setSearch} getPopuparMovies={getPopuparMovies} getPopuparSeries={getPopuparSeries} setShow={setShow} setSearchCollections={setSearchCollections} getsuccessfulMovies={getsuccessfulMovies}/>
-    <div className="ReactMovieApp">
+    <div className="react-movie-app">
     <h1>React Movie App</h1>
     </div>
     <Modal active={show} >

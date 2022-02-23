@@ -18,7 +18,7 @@ body{
 .block{
   overflow: hidden;
 }
-.ReactMovieApp{
+.react-movie-app{
   width: 100%;
   display: flex;
   justify-content: center   ;

@@ -9,7 +9,7 @@ return(
 <div className="WatchList">
    
 <div className="back" ><h1 onClick={()=>setShow(false)}> <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon> Назад</h1></div>
-<div className="itemsList">
+<div className="items-list">
 <h1 >Избранное</h1>
 
 </div>
