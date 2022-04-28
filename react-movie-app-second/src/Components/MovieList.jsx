@@ -1,8 +1,11 @@
 
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 import './movie.css'
+
 function MovieList(props) {
+
 return(
 <div className='MovieList'>
    <div className="img">
@@ -15,6 +18,7 @@ return(
  
    </div>
    <div className="info">
+    
       <h4>{props.movie.original_title}</h4>
       <h4>{props.movie.name}</h4>
    

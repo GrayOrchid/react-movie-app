@@ -2,7 +2,9 @@ import './movie.css'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function WatchList(props) {
+
 return(
+
 <div className='MovieList'>
    <div className="img">
       <img
@@ -10,6 +12,7 @@ return(
          src={`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`}    />
    </div>
    <div className="info">
+    
       <h4>{props.movie.original_title}</h4>
       <h4>{props.movie.name}</h4>
       <span>Оценка : {props.movie.vote_average}</span>

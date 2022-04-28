@@ -19,10 +19,11 @@ function App(params) {
   let [watchList, setWatchList] = useState([])
   let [show, setShow] = useState(false)
   let [burgerMenu,setBurgerMenu] = useState(false)
-  let key = '82c0eaa6b4a3e3b9581bcd29c4e1872f'
+    let key = '82c0eaa6b4a3e3b9581bcd29c4e1872f'
 function getsuccessfulMovies(params) {
     setMovies(successfulMovies)
 }
+
 
   function saveToLocalStorage(item) {
       localStorage.setItem('reactmovie-app-watch-list', JSON.stringify(item))
@@ -32,7 +33,9 @@ function getsuccessfulMovies(params) {
       let url = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${key}&language=ru-RUS&query=${search}  `);
       let data = await url.json(url);
       if (data.results) {
-          setMovies(data.results);
+          setMovies(  data.results  );
+          console.log(data.results);
+          
       }
   }
 
@@ -65,12 +68,15 @@ function getsuccessfulMovies(params) {
       let newWatchList = [...watchList, movie]
       setWatchList(newWatchList)
       saveToLocalStorage(newWatchList)
+      console.log([...watchList, movie]);
+      
   }
 
   function deleteMovie(item) {
       let deleteItems = watchList.filter((e) => e.id !== item.id)
       setWatchList(deleteItems)
       saveToLocalStorage(deleteItems)
+      console.log(item);
   }
 
   useEffect(() => {
@@ -78,6 +84,7 @@ function getsuccessfulMovies(params) {
       let saveWatchList = JSON.parse(
           localStorage.getItem('reactmovie-app-watch-list')
       )
+    
       if (saveWatchList) {
           setWatchList(saveWatchList)
       }
